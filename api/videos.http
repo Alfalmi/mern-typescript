@@ -1,0 +1,32 @@
+
+@api = http://localhost:3000
+
+GET {{api}}/videos
+###
+GET {{api}}/videos/610afc790987d14811ac8bf7
+
+### CREATE A VIDEO
+POST  {{api}}/videos
+Content-Type: application/json
+
+
+[
+{
+   "title": "cure",
+    "description": "Music",
+    "url": "https://www.youtube.com/watch?v=9GkVhgIeGJQ"
+}
+]
+    
+    
+
+
+
+###
+DELETE {{api}}/videos/
+###
+PUT {{api}}/videos/610afc030987d14811ac8bf5
+
+{
+    "title": "The cure"
+}
